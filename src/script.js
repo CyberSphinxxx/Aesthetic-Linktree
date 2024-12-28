@@ -63,29 +63,12 @@ $(function () {
   
   volumeBtn.addEventListener('click', toggleMute);
   
-  document.addEventListener('DOMContentLoaded', () => {
-    // Default state: not muted
-    video.muted = false;
+  // Preload audio
+  bgMusic.load();
   
-    // Set the correct initial icon for the volume button
-    volumeBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
-  
-    // Try to play the video programmatically
-    video.play().catch((error) => {
-      console.error('Error trying to play the video:', error);
-    });
-  
-    // Log errors if the video fails to load
-    video.onerror = () => {
-      console.error('Video failed to load or play.');
-    };
-  
-    // Play background music by default
-    bgMusic.play().catch((error) => {
-      console.error('Error trying to play background music:', error);
-    });
-  });
-  
+  // Initialize volume button state
+  toggleMute();
+
   // Add animation to profile picture
   const profilePic = document.querySelector('.profile-pic');
   profilePic.addEventListener('mouseover', () => {
