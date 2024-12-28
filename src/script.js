@@ -63,9 +63,6 @@ $(function () {
   
   volumeBtn.addEventListener('click', toggleMute);
   
-  // Preload audio
-  bgMusic.load();
-  
   // Initialize volume button state
   toggleMute();
 
