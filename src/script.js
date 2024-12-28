@@ -66,3 +66,33 @@ $(function () {
   
   // Initialize volume button state
   toggleMute();
+
+  // Add animation to profile picture
+  const profilePic = document.querySelector('.profile-pic');
+  profilePic.addEventListener('mouseover', () => {
+    profilePic.style.animation = 'pulse 0.5s infinite';
+  });
+  profilePic.addEventListener('mouseout', () => {
+    profilePic.style.animation = '';
+  });
+
+  // Add animation to status card
+  const statusCard = document.querySelector('.status-card');
+  statusCard.addEventListener('mouseover', () => {
+    statusCard.style.transform = 'scale(1.02)';
+  });
+  statusCard.addEventListener('mouseout', () => {
+    statusCard.style.transform = 'scale(1)';
+  });
+
+  // Add animation to nav icons
+  const navIcons = document.querySelectorAll('.nav-icon');
+  navIcons.forEach(icon => {
+    icon.addEventListener('mouseover', () => {
+      icon.querySelector('.icon-wrapper').style.animation = 'pulse 0.5s infinite';
+    });
+    icon.addEventListener('mouseout', () => {
+      icon.querySelector('.icon-wrapper').style.animation = '';
+    });
+  });
+
