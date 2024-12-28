@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>John Lemar Gonzales</title>
-  <link rel="icon" href="/assets/imgs/besticons.png"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/src/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Lemar Gonzales</title>
+    <link rel="icon" href="/assets/imgs/besticons.png"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/styles.css">
 </head>
 <body>
     <div class="video-container">
-        <video autoplay loop muted id="myVideo">
+        <video autoplay loop muted playsinline id="myVideo">
             <source src="/assets/videos/gojo.mp4" type="video/mp4">
         </video>
         <audio id="bgMusic" loop>
@@ -22,73 +23,69 @@
         <i class="fas fa-volume-mute"></i>
     </button>
 
-    <div class="content-wrapper">
-        <div class="profile-wrapper">
-            <div class="profile-container">
-                <a href="https://link-hub-os.vercel.app" target="_blank"><img src="/assets/imgs/mypfp.jpg" alt="Profile Picture" class="profile-pic"></a>
-                <div class="accessory" style="background-image: url('/assets/imgs/discord-border.png');"></div>
-            </div>
+    <div class="main-container">
+        <div class="left-column">
+            <div class="profile-wrapper">
+                <div class="profile-container">
+                    <a href="https://link-hub-os.vercel.app" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/imgs/mypfp.jpg" alt="Profile Picture" class="profile-pic">
+                    </a>
+                    <div class="accessory" style="background-image: url('/assets/imgs/discord-border.png');"></div>
+                </div>
 
-            <div class="profile-info">
-                <h1 class="profile-name">John Lemar Gonzales</h1>
-                <h2 class="profile-name-sub">Aka CyberSphinxxx</h2>
-                <p class="current-status"><i class="fas fa-laugh-squint"></i> Web developer</p>
-            </div>
-        </div>
-
-        <div class="status-card">
-            <div class="content">
-                <i class="fas fa-couch icon"></i>
-                <div class="details">
-                    <p class="main-text">Comfy Couch</p>
-                    <p class="sub-text">Perfecting the art of doing nothing</p>
-                    <p class="sub-text">Skills: Expert Procrastinator, Professional Bug Creator</p>
+                <div class="profile-info">
+                    <h1 class="profile-name">John Lemar Gonzales</h1>
+                    <h2 class="profile-name-sub">Aka CyberSphinxxx</h2>
                 </div>
             </div>
-
-            <h3 id="specialties" class="elapse">Time wasted: </h3>
-            <div class="footer">
-                <span id="timer" class="timer">00:00:00</span>
+            
+            <div class="about-me">
+                <h3>About Me</h3>
+                <ul>
+                    <li><i class="fas fa-code"></i> Web Developer</li>
+                    <li><i class="fas fa-laptop-code"></i> Programmer</li>
+                    <li><i class="fas fa-users"></i> Student Leader</li>
+                    <li><i class="fas fa-hand-holding-heart"></i> Philanthropist</li>
+                </ul>
             </div>
-        </div>
 
-        <nav class="nav-bar">
-            <a href="https://github.com/CyberSphinxxx" class="nav-icon" target="_blank" rel="noopener noreferrer">
-                <div class="icon-wrapper">
+            <nav class="social-nav">
+                <a href="https://github.com/CyberSphinxxx" class="social-link" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
-                </div>
-                <span class="tooltip">GitHub</span>
-            </a>
-
-            <a href="https://www.facebook.com/johnlemgonzales/" class="nav-icon" target="_blank" rel="noopener noreferrer">
-                <div class="icon-wrapper">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.facebook.com/johnlemgonzales/" class="social-link" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-facebook"></i>
-                </div>
-                <span class="tooltip">Facebook</span>
-            </a>
-
-            <a href="https://www.linkedin.com/in/john-lemar-gonzales-28011b28b/" class="nav-icon" target="_blank" rel="noopener noreferrer">
-                <div class="icon-wrapper">
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.linkedin.com/in/john-lemar-gonzales-28011b28b/" class="social-link" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-linkedin"></i>
-                </div>
-                <span class="tooltip">Linkedin</span>
-            </a>
-
-            <a href="https://discord.gg/74jFFFgjNT" class="nav-icon" target="_blank" rel="noopener noreferrer">
-                <div class="icon-wrapper">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://discord.gg/74jFFFgjNT" class="social-link" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-discord"></i>
-                </div>
-                <span class="tooltip">Discord</span>
-            </a>
-
-            <a href="https://open.spotify.com/user/216buc3cy35iuxknnl37fb2lq" class="nav-icon" target="_blank" rel="noopener noreferrer">
-                <div class="icon-wrapper">
+                    <span>Discord</span>
+                </a>
+                <a href="https://open.spotify.com/user/216buc3cy35iuxknnl37fb2lq" class="social-link" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-spotify"></i>
-                </div>
-                <span class="tooltip">Spotify</span>
-            </a>
+                    <span>Spotify</span>
+                </a>
+            </nav>
+        </div>
+        <div class="right-column">
+            <div class="github-stats">
+                <h3>GitHub Stats</h3>
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=cybersphinxxx&theme=dark&background=000000" alt="GitHub Streak" class="github-streak">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs?username=cybersphinxxx&show_icons=true&locale=en&layout=compact&theme=dark&background=000000" alt="Most Used Languages" class="github-languages">
+            </div>
 
-        </nav>
+            <div class="skills-section">
+                <h3>Languages and Tools</h3>
+                <div class="skills-container">
+                    <!-- We'll populate this dynamically with JavaScript -->
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="/src/script.js"></script>
